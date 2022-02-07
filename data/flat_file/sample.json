@@ -1,0 +1,7 @@
+{
+"customers":[  
+{"name":"Tom", "age":30, "Country":"US"},
+{"name":"Mike", "age":54, "Country":"UK"},
+{"name":"Eddie", "age":56, "Country":"PT"}
+]
+}
