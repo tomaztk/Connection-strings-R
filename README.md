@@ -53,11 +53,12 @@ jsonedit(data_json, height = "400px", mode = "view")
 ```
 
 
-## Databases and formats
+# Database and database file formats
 
-#### Spark
+### Apache Spark
 
-#### Microsoft SQL Server
+
+### Microsoft SQL Server
 
 ### PostgresSQL
 
@@ -82,7 +83,8 @@ jsonedit(data_json, height = "400px", mode = "view")
 ### Snowflake
 
 
-## External sources
+# External sources
+
 
 ### Web URL / HTML
 
@@ -93,7 +95,7 @@ jsonedit(data_json, height = "400px", mode = "view")
 ### FTP
 
 
-## Cloud storage
+# Cloud storage
 
 ### Azure - blob storage
 
@@ -106,7 +108,7 @@ jsonedit(data_json, height = "400px", mode = "view")
 ### Databricks
 
 
-## Applications
+# Applications for data engineering and data science
 
 ### SAS
 
@@ -121,9 +123,7 @@ jsonedit(data_json, height = "400px", mode = "view")
 ### Orange
 
 
-
-
-## Languages
+# Other languages
 
 ### Powershell
 
