@@ -1,4 +1,4 @@
-# Curated list of different connection strings for R Language
+# Curated list of connection strings for R Language
 
 
 ## Motivation:
