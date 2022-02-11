@@ -60,6 +60,8 @@ jsonedit(data_json, height = "400px", mode = "view")
 
 ### Microsoft SQL Server
 
+
+
 ### PostgresSQL
 
 ### Oracle
@@ -130,3 +132,19 @@ jsonedit(data_json, height = "400px", mode = "view")
 ### Python
 
 ### C#
+
+
+# List of all used R packages
+
+Installing packages:
+```R
+# Example
+install.packages("jsonlite", dependencies = TRUE)
+```
+
+
+
+1. jsonlite (Link to: [CRAN](https://cran.r-project.org/web/packages/jsonlite/index.html))
+1. Rodbc
+
+
