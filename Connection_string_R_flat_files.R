@@ -33,3 +33,6 @@ data_json <- fromJSON("sample.json", simplifyVector = FALSE)
 # View JSON data
 View(data_json)
 listviewer::jsonedit(data_json, height = "400px", mode = "view")
+
+
+# Database
