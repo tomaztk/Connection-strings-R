@@ -7,6 +7,12 @@
 # Git: 
 ################################
 
+##############
+#
+# Flat files
+#
+##############
+
 #Set working directory
 #setwd("/Users/tomazkastrun/Documents/tomaztk_github/Connection-strings-R/data/flat_file") #unix
 setwd("c://datatk//git//connection-strings-r//data//flat_file")  #windows
@@ -37,7 +43,16 @@ View(data_json)
 listviewer::jsonedit(data_json, height = "400px", mode = "view")
 
 
+
+##############
+#
 # Database
+#
+##############
+
+
+### SQLite
+
 #install.packages("RSQLite")
 library(RSQLite)
 
@@ -57,3 +72,10 @@ head(data_from_db)
 
 #use query
 dbGetQuery(conn, "SELECT * FROM data_db WHERE age > 30")
+
+# Terminate connection
+dbDisconnect(conn)
+
+
+### Microsoft SQL Server
+
