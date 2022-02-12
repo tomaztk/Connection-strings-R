@@ -79,3 +79,22 @@ dbDisconnect(conn)
 
 ### Microsoft SQL Server
 
+# install.packages("odbc")
+library(odbc)
+library(RODBC)
+
+# con <- dbConnect(odbc()
+#                  ,Driver = "SQL Server"
+#                  ,Server = "MSSQLSERVER2019"
+#                  ,Database = "bikestore"
+#                  #,UID = "myuser"
+#                  #,PWD = rstudioapi::askForPassword("Database password")
+#                  ,trusted_connection="true"
+#                  ,Port = 1433)
+
+
+dbConnection <- 'Driver={SQL Server}; Server=MSSQLSERVER2019; Database=bikestore; Trusted_Connection=Yes'
+
+dbGetQuery(, "SELECT * FROM dbo.sample_table")
+sqlQuery( dbConnection, "SELECT * FROM dbo.sample_table" )
+
