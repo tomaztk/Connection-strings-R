@@ -60,7 +60,25 @@ jsonedit(data_json, height = "400px", mode = "view")
 
 ### Microsoft SQL Server
 
+Connect to Microsoft SQL server using R package `odbc` and read data from SQL tables by using SELECT statements or calling stored procedures. Library also supports INSERT, UPDATE, DELETE statements.
 
+```R
+# install.packages("odbc")
+library(odbc)
+
+ con <- dbConnect(odbc()
+                  ,Driver = "SQL Server"
+                  ,Server = "MSSQLSERVER2019"
+                  ,Database = "bikestore"
+                  ,trusted_connection="true"
+                  ,Port = 1433)
+
+
+dbConnection <- 'Driver={SQL Server}; Server=MSSQLSERVER2019; Database=bikestore; Trusted_Connection=Yes'
+
+dbGetQuery(, "SELECT * FROM dbo.sample_table")
+sqlQuery( dbConnection, "SELECT * FROM dbo.sample_table" )
+```
 
 ### PostgresSQL
 
