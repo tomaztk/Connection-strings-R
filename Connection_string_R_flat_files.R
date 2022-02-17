@@ -98,3 +98,28 @@ dbConnection <- 'Driver={SQL Server}; Server=MSSQLSERVER2019; Database=bikestore
 dbGetQuery(, "SELECT * FROM dbo.sample_table")
 sqlQuery( dbConnection, "SELECT * FROM dbo.sample_table" )
 
+
+
+### Apache Spark
+
+
+
+### PostgreSQL
+
+install.packages('RPostgreSQL')
+install.packages('RPostgres')
+library('RPostgres')
+
+library(DBI)
+db <- 'AdventureWorks'  #provide the name of your db
+host_db <- 'ec2-54-83-201-96.compute-1.amazonaws.com'
+#i.e. # i.e. 'ec2-54-83-201-96.compute-1.amazonaws.com'  
+db_port <- '98939'  # or any other port specified by the DBA
+db_user <- 'tomaz'  
+db_password <- 'LastChristmas2000.'
+con <- dbConnect(RPostgres::Postgres(), dbname = db, host=host_db, port=db_port, user=db_user, password=db_password)  
+
+dbGetQuery(con, 'SELECT * FROM sample_table')
+dbDisconnect(con) 
+
+
