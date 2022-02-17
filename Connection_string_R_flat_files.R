@@ -111,11 +111,10 @@ install.packages('RPostgres')
 library('RPostgres')
 
 library(DBI)
-db <- 'AdventureWorks'  #provide the name of your db
-host_db <- 'ec2-54-83-201-96.compute-1.amazonaws.com'
-#i.e. # i.e. 'ec2-54-83-201-96.compute-1.amazonaws.com'  
-db_port <- '98939'  # or any other port specified by the DBA
-db_user <- 'tomaz'  
+db <- 'postgres'  #provide the name of your db
+host_db <- 'localhost'
+db_port <- '5432'  
+db_user <- 'postgres'  
 db_password <- 'LastChristmas2000.'
 con <- dbConnect(RPostgres::Postgres(), dbname = db, host=host_db, port=db_port, user=db_user, password=db_password)  
 
