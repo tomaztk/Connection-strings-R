@@ -114,8 +114,6 @@ dbDisconnect(con)
 
 ### Informix
 
-### Netezza
-
 ### Hadoop
 
 ### Snowflake
@@ -131,6 +129,8 @@ dbDisconnect(con)
 ### API 
 
 ### FTP
+
+
 
 
 # Cloud storage
