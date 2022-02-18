@@ -122,3 +122,13 @@ dbGetQuery(con, 'SELECT * FROM sample_table')
 dbDisconnect(con) 
 
 
+
+#### MySQL
+
+#install.packages("RMySQL")
+library(RMySQL)
+library(DBI)
+
+mydb = dbConnect(MySQL(), user='mysqluser', password='LastChristmas2000.', dbname='AdventureWorks', host='localhost')
+df <- data.frame(dbSendQuery(mydb, 'SELECT * FROM my_table'))
+

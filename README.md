@@ -55,8 +55,6 @@ jsonedit(data_json, height = "400px", mode = "view")
 
 # Database and database file formats
 
-### Apache Spark
-
 
 ### Microsoft SQL Server
 
@@ -104,19 +102,32 @@ dbDisconnect(con)
 
 ### MySQL
 
-### SQLite
 
-### Avro
+```R
+#install.packages("RMySQL")
+library(RMySQL)
+library(DBI)
 
-### Parquet
+mydb = dbConnect(MySQL(), user='mysqluser', password='LastChristmas2000.', dbname='AdventureWorks', host='localhost')
+df <- data.frame(dbSendQuery(mydb, 'SELECT * FROM my_table'))
+```
+
 
 ### MongoDB
-
-### Informix
 
 ### Hadoop
 
 ### Snowflake
+
+
+# Database files
+
+### Apache Spark
+
+### AVRO
+
+### Parquet
+
 
 
 # External sources
@@ -176,11 +187,12 @@ Installing packages:
 ```R
 # Example
 install.packages("jsonlite", dependencies = TRUE)
+install.packages("DBI", dependencies = TRUE)
 ```
 
 
 
 1. jsonlite (Link to: [CRAN](https://cran.r-project.org/web/packages/jsonlite/index.html))
-1. Rodbc
+1. DBI (Link to [CRAN](https://cran.r-project.org/web/packages/DBI/index.html))
 
 
