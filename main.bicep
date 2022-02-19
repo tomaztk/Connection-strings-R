@@ -37,7 +37,14 @@ resource exampleStorage 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   kind: 'StorageV2'
 }
 
+// Installation
+// azure cli
+// az --version
+// az bicep upgrade
+
+
 // run in Azure CLI (in VS Code)
+// az login
 // az group create --name exampleRG --location eastus
 // az deployment group create --resource-group exampleRG --template-file main.bicep  --parameters storageName=storesamplerg
 // az group delete --name exampleRG
